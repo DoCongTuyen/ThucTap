@@ -1,0 +1,78 @@
+<div class="subheader">
+    <h1 class="subheader-title">
+        Danh sách Employee các đơn vị
+    </h1>
+    <button class="btn btn-primary" routerLink="/quan-ly-user/user-mng/add">Tạo Employee</button>
+</div>
+<div class="panel">
+    <div class="card-body">
+        <div class="form-group row" style="padding-left: 15px; padding-right: 15px">
+            <div class="form-group col-md-6">
+                <div class="form-group row">
+                    <label class="col-md-4 col-sm-6 col-form-label form-label">Họ và tên</label>
+                    <div class="col-md-8 col-sm-6">
+                        <input type="text" placeholder="Nhập họ và tên" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-4 col-sm-6 col-form-label form-label">Số điện thoại</label>
+                    <div class="col-md-8 col-sm-6">
+                        <input type="text" placeholder="Nhập số điện thoại" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group col-md-6">
+                <div class="form-group row">
+                    <label class="col-md-4 col-sm-6 col-form-label form-label">CMND/Hộ chiếu</label>
+                    <div class="col-md-8 col-sm-6">
+                        <input type="text" placeholder="Nhập CMND/Hộ chiếu" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-4 col-sm-6 col-form-label form-label">Trạng thái</label>
+                    <div class="col-md-8 col-sm-6">
+                        <select class="form-control" style="width: 100%">
+                            <option [value]="null"> -- Tất cả --</option>
+                            <option *ngFor="let item of status" [value]="item.id">{{item.name}}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row text-center">
+            <div class="col-md-12">
+                <button type="button" (click)="doSearch()" class="btn btn-info">
+                    <i class="far fa-search"></i> Tìm kiếm
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+        <tr style="background-color: #D2E0E6;color: #0066cc;">
+<!--            <th><input type="checkbox"  [(ngModel)]="masterSelected"  name="check" (change)="selectAll()" value="" /></th>-->
+            <th scope="col">ID</th>
+            <th scope="col">Họ Tên</th>
+            <th scope="col">Email</th>
+            <th scope="col">Số điện thoại</th>
+            <th scope="col">Truy cập gần nhất</th>
+            <th scope="col">Địa chỉ</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let item of employeeModels">
+            <td>{{item.id}}</td>
+            <td ><a style="color: #0c7cd5;" [routerLink]="['/quan-ly-user/user-mng/update',item.id]"   (click)="onUpdate(item.id)"> {{ item.fullName }}</a></td>
+            <td>{{ item.email}}</td>
+            <td>{{ item.phoneNumber}}</td>
+            <td>{{ item.lastAccess| date:'dd/MM/yyyy'}}</td>
+            <td>{{ item.address}}</td>
+
+        </tr>
+        </tbody>
+
+    </table>
+
+</div>

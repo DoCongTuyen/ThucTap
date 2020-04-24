@@ -1,0 +1,254 @@
+<div class="container bootstrap snippet">
+    <div class="row">
+        <div class="col-sm-10"><h1></h1></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3"><!--left col-->
+            <div class="text-center">
+                <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail"
+                     alt="avatar">
+                <h6>Upload a different photo...</h6>
+                <input type="file" class="text-center center-block file-upload"  (change)="xulyFile($event)" name="imgUrl"  style="width: 265px;">
+            </div>
+            <hr>
+            <br>
+        </div><!--/col-3-->
+        <div class="col-sm-9">
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="home">
+                    <hr>
+                    <form class="form" (ngSubmit)="onSubmit(employeeForm)" #employeeForm="ngForm" id="registrationForm" class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                    <label><h4>Username(*):</h4></label>
+                                    <input type="text" class="form-control" name="first_name" id="username"
+                                           placeholder="Enter your username..." title="enter your first name if any."
+                                          [(ngModel)]="employeeModel.userName">
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                    <label><h4>Password(*):</h4></label>
+                                    <input type="password" class="form-control" name="password" id="password"
+                                           placeholder="Enter your password..." title="enter your last name if any."
+                                           [(ngModel)]="employeeModel.password">
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+
+                                <div class="col-xs-6">
+                                    <label for="fullName"><h4>Họ và Tên(*):</h4></label>
+                                    <input type="text" class="form-control" name="fullName" id="fullName"
+                                           placeholder="Enter your fullname..." title="enter your name if any."
+                                           [(ngModel)]="employeeModel.fullName">
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                    <label for="birthday"><h4>Ngày sinh(*):</h4></label>
+                                    <input type="date" class="form-control" name="birthday" id="birthday"
+                                           placeholder="Enter your birthday..." title="enter your birthday if any."
+                                           [(ngModel)]="employeeModel.birthDay">
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                    <label for="address"><h4>Địa chỉ(*):</h4></label>
+                                    <input type="text" class="form-control" name="address" id="address"
+                                           placeholder="Enter your address..." title="enter your address if any."
+                                           [(ngModel)]="employeeModel.address">
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                    <label for="phoneNumber"><h4>Số điện thoại(*):</h4></label>
+                                    <input type="text" class="form-control" name="phoneNumber" id="phoneNumber"
+                                           placeholder="Enter your phoneNumber..."
+                                           title="enter your mobile number if any."
+                                           [(ngModel)]="employeeModel.phoneNumber">
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                    <label for="skypeAcc"><h4>Skype Links(*):</h4></label>
+                                    <input type="text" class="form-control" name="skypeAcc" id="skypeAcc"
+                                           placeholder="Enter your Skype Links..."
+                                           title="enter your Skype Links if any."
+                                           [(ngModel)]="employeeModel.skypeAccount">
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                    <label for="fbLink"><h4>Facebook Links(*):</h4></label>
+                                    <input type="text" class="form-control" name="fbLink" id="fbLink"
+                                           placeholder="Enter your Facebook Links..."
+                                           title="enter your Facebook Links if any."
+                                          >
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                    <label for="email"><h4>Email(*)</h4></label>
+                                    <input type="email" class="form-control" name="email" id="email"
+                                           placeholder="you@email.com" title="enter your email."
+                                           [(ngModel)]="employeeModel.email">
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+
+                                <div class="col-xs-6">
+                                    <label for="university"><h4>Trường học(*):</h4></label>
+                                    <input type="email" class="form-control" id="university"
+                                           placeholder="Enter your university..."
+                                           name="university"  [(ngModel)]="employeeModel.university"
+                                           title="enter a university">
+                                </div>
+
+                            </div>
+<!--                            <div class="form-group">-->
+<!--                                <div class="col-xs-6">-->
+<!--                                    <label for="faculty"><h4>Khoa(*):</h4></label>-->
+<!--                                    <input type="text" class="form-control" name="faculty" id="faculty"-->
+<!--                                           placeholder="Enter your faculty..." title="enter your university."-->
+<!--                                           [(ngModel)]="employeeModel.university">-->
+<!--                                </div>-->
+
+<!--                            </div>-->
+<!--                            <div class="form-group">-->
+<!--                                <div class="col-xs-6">-->
+<!--                                    <label><h4>Loại giáo dục(*):</h4></label>-->
+<!--                                    <div class="rs-select2 js-select-simple select&#45;&#45;no-search">-->
+<!--                                        <select name="education">-->
+<!--                                            <option>Đại Học</option>-->
+<!--                                            <option>Cao đẳng</option>-->
+<!--                                            <option>Trung cấp</option>-->
+<!--                                        </select>-->
+<!--                                        <div class="select-dropdown"></div>-->
+
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+                            <div class="form-group">
+
+                                <div class="col-xs-6">
+                                    <label for="graduationYear"><h4>Năm tốt nghiệp(*):</h4></label>
+                                    <input type="number" class="form-control" name="graduationYear" id="graduationYear"
+                                           placeholder="Enter your graduationYear..." title="enter your graduationYear."
+                                           [(ngModel)]="employeeModel.graduatedYear">
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                    <label><h4>Loại người dùng(*):</h4></label>
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="userType"  [(ngModel)]="employeeModel.userType">
+                                            <option>Nhân viên</option>
+                                            <option>Thử việc</option>
+                                            <option>Học việc</option>
+                                            <option>Sinh viên</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                    <label><h4>Phòng ban:</h4></label>
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="department"  [(ngModel)]="employeeModel.departmentId">
+                                            <option>Tester</option>
+                                            <option>Developer</option>
+                                            <option>Human Resources</option>
+                                            <option>Manager</option>
+                                            <option>Admin</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+<!--                            <div class="form-group">-->
+
+<!--                                <div class="col-xs-6">-->
+<!--                                    <label><h4>Phân quyền(*):</h4></label>-->
+<!--                                    <div class="rs-select2 js-select-simple select&#45;&#45;no-search">-->
+<!--                                        <select name="role" formControlName="role">-->
+<!--                                            <option>PUBLIC</option>-->
+<!--                                            <option>MANAGER</option>-->
+<!--                                            <option>LEADER</option>-->
+<!--                                            <option>MEMBER</option>-->
+<!--                                            <option>HR</option>-->
+<!--                                        </select>-->
+<!--                                        <div class="select-dropdown"></div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                    <label><h4>Chức vụ(*):</h4></label>
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="position" [(ngModel)]="employeeModel.positionId">
+                                            <option>Nhân viên</option>
+                                            <option>Trưởng nhóm</option>
+                                            <option>Quản lý</option>
+                                            <option>Nhân sự</option>
+                                            <option>Kế toán</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Please select your manager</label>
+                                <div class="row">
+                                    <label class="md-check">
+                                        <input type="radio" value="true" name="manager" >
+                                        True
+                                    </label>
+
+                                    <label class="md-check">
+                                        <input type="radio" value="false" name="manager">
+                                        False
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div>
+                                <br>
+                                <button class="btn btn-lg btn-success" type="submit"  [disabled]="!employeeForm.form.valid"><i
+                                        class="glyphicon glyphicon-ok-sign"></i> Save
+                                </button>
+
+<!--                                <p></p>         <span>Go to list <a routerLink="/employee"-->
+<!--                                                                    style="color: red;">Employee</a></span>-->
+                            </div>
+                        </div>
+                    </form>
+
+                    <hr>
+
+                </div><!--/tab-pane-->
+
+            </div><!--/tab-content-->
+
+        </div><!--/col-9-->
+    </div><!--/row-->
+</div>

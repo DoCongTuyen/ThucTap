@@ -1,0 +1,28 @@
+<div class="content">
+    <h1># {{issue.id}}</h1>
+    <p><span>Tên vấn đề:</span>   {{issue.name}}</p>
+    <p><span>Dự án:      </span>  {{issue.projectId}}</p>
+    <p><span>Loại vấn đề:  </span> {{issue.type}}</p>
+    <p><span>Mức ưu tiên:</span>  {{issue.priority}}</p>
+    <p><span>Ngày bắt đầu: </span>{{issue.startDate}}</p>
+    <p><span>Thời gian: </span>{{issue.dueDate * 8}} Giờ</p>
+<!--    <p><span>Ngày hết hạn: </span>{{issue.startDate.getDay()+issue.dueDate}}</p>-->
+    <div class="progress" style="height: 20px; background-color: #cbcfde;">
+        <span> <label style="font-size: 18px;font-weight: bold;" for="">Tiến độ:</label></span>
+        <div class="progress-bar bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+             aria-valuemax="100">{{issue.donePercent}}%
+        </div>
+    </div>
+</div>
+<div class="content">
+    <h1># Lịch sử cập nhật</h1>
+    <div class="abc" style="margin-bottom: 20px;" *ngFor="let item of issueHistoryModels">
+        <div *ngIf="item.issueId == issue.id">
+            <h5 >Người dùng {{item.upLoadPersonId}} đã cập nhật Tiến độ thành: {{item.issueChange}} %</h5>
+
+            <h5  >Người dùng {{item.upLoadPersonId}} đã cập nhật Độ ưu tiên thành: {{item.issueOld}} </h5>
+
+            <span style="font-size: 13px;color: #7f8995">{{item.updateDate|date :'dd/MM/yyyy hh:mm:ss'}}</span>
+        </div>
+    </div>
+</div>

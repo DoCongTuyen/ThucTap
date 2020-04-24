@@ -1,0 +1,21 @@
+p{
+    font-size: 18px;
+    font-weight: normal;
+}
+span{
+    font-weight: bold;
+    width: 200px;
+    display: inline-block;
+}
+.content{
+    color: black;
+    border: 1px solid #d7d7d7;
+    background-color: #cbcfde;
+    padding: 20px;
+    margin-bottom: 6px;
+    border: cadetblue;
+    width: 1070px;
+    height: 350px;
+}
+
+

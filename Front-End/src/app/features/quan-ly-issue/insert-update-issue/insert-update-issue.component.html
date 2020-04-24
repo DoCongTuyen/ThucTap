@@ -1,0 +1,99 @@
+<form (ngSubmit)="onSubmit(issueForm)" #issueForm="ngForm">
+    <div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Tên<span class="text-primary"> (*)</span></label>
+            <div class="col-sm-10">
+                <input type="text" [(ngModel)]="issue.name" name="ten" class="form-control"
+                       placeholder="Name" >
+
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label" for="statusId">Kiểu vấn đề</label>
+            <div class="col-sm-4">
+                <select class="form-control" [(ngModel)]="issue.type" id="statusId" name="type">
+                    <option>Bug</option>
+                    <option>Feature</option>
+                    <option>Support</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Chủ đề<span class="text-primary"> (*)</span></label>
+            <div class="col-sm-10">
+
+                <select (change)="handlerProjectIdSelected($event)" id="project" class="form-control"
+                       >
+                    <option [value]="null"> -- Chọn Project --</option>
+                    <option
+                            *ngFor="let pr of project"
+                            [value]="pr.id"
+                            [selected]="projectIdSelected == pr.id">{{ pr.name }}</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Status<span class="text-primary"> (*)</span></label>
+            <div class="col-sm-10">
+
+                <select (change)="handlerStatusIdSelected($event)" id="status" class="form-control"
+                       >
+                    <option [value]="null"> -- Chọn Status --</option>
+                    <option
+                            *ngFor="let st of status"
+                            [value]="st.id"
+                            [selected]="statusIdSelected == st.id">{{ st.name }}</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Mô tả<span class="text-primary"></span></label>
+
+            <div class="col-sm-10 ">
+                <ck-editor [(ngModel)]="issue.description" name="editor1"></ck-editor>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label" for="ab">Trạng thái<span class="text-primary"> (*)</span></label>
+            <div class="col-sm-4">
+                <select class="form-control" [(ngModel)]="issue.reason" name="reason">
+                    <option>New</option>
+                    <option>Old</option>
+                </select>
+            </div>
+            <label class="col-sm-2 col-form-label" for="startDate">Ngày bắt đầu</label>
+            <div class="col-sm-4">
+                <input type="date" [(ngModel)]="issue.startDate" name="startdate"
+                       class="form-control">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label" for="ab">Mức ưu tiên<span class="text-primary"> (*)</span></label>
+            <div class="col-sm-4">
+                <select class="form-control" id="ab" [(ngModel)]="issue.priority" name="priority">
+                    <option>Low</option>
+                    <option>Normal</option>
+                    <option>High</option>
+                </select>
+            </div>
+            <label class="col-sm-2 col-form-label" for="ab">Số ngày ước lượng</label>
+            <div class="col-sm-4">
+                <input type="text" [(ngModel)]="issue.dueDate" class="form-control"
+                       placeholder="Số ngày" name="duadate">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label" for="statusId">Tiến độ</label>
+            <div class="col-sm-4">
+                <input type="text" [(ngModel)]="issue.donePercent" class="form-control"
+                       placeholder="% tiến độ thực hiện" name="donepercent">
+            </div>
+        </div>
+    </div>
+    <div class="text-left" style="margin-top: 20px;">
+        <button type="submit" [disabled]="!issueForm.form.valid"
+                class="btn btn-info">Submit
+        </button>&nbsp;
+        <button type="button" class="btn btn-success" data-dismiss="modal">Hủy</button>
+    </div>
+</form>

@@ -1,0 +1,55 @@
+<div class="container demo">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="news-slider" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
+                <div class="owl-wrapper-outer">
+                    <div class="owl-wrapper row" style="width: 960px; left: 0px; display: flex;" >
+                        <div class="owl-item col-md-6" *ngFor="let item of newsModels " style="margin-bottom: 30px;">
+                            <div class="post-slide">
+                                <div class="post-img"><img
+                                        [src]="'http://localhost:8082/api/upload/getFile/'+item.imgUrl"
+                                        alt="Khóa học Chuyên viên website lành nghề Online" style="width: 436px; height: 290px;">
+                                    <div class="over-layer">
+                                        <ul class="post-link">
+                                            <li>
+                                                <a  [routerLink]="['/news/details',item.id]"
+                                                   class="fa fa-search"></a>
+                                            </li>
+                                            <li>
+
+                                                <a  [routerLink]="['/news/details',item.id]"
+                                                   class="fa fa-link"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="post-review">
+                                    <h3 class="post-title"><a
+                                            [routerLink]="['/news/details',item.id]">{{item.tieuDe}}</a>
+                                    </h3>
+                                    <ul class="post-info">
+                                       <li style="font-size: 17px;">{{item.tomTat}}...</li>
+                                    </ul>
+                                    <p class="post-description" style="margin-bottom: 0rem;">Tác giả: {{item.nguoiDang}} <span style="float: right;">Ngày Đăng: {{item.ngayDang|date:'dd/MM/yyyy'}}</span> </p>
+
+                                   <a
+                                           [routerLink]="['/news/details',item.id]"
+
+                                        class="read-more">
+                                       Chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="owl-controls clickable">
+                    <div class="owl-buttons">
+                        <div class="owl-prev"></div>
+                        <div class="owl-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

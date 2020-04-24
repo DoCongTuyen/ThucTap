@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ee14f8c5-2a39-4788-85fb-a968a6a08d56" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/core/issue-history/issue-history.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/core/issue-history/issue-history.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/features/quan-ly-issue/quan-ly-issue.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/model/Issue/issue.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/model/base.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/model/comments/comments.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/model/employee/employee.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/model/issue-history/issue-history.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/model/news/news.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/model/project/project.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/model/response/SearchIssue.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/model/status-type/status-type.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/model/status/status.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.navigation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.navigation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/core/core.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/core/core.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/core/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/core/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/quan-ly-user/confirm-delete-user/confirm-delete-user.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/quan-ly-user/confirm-delete-user/confirm-delete-user.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/quan-ly-user/confirm-delete-user/confirm-delete-user.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/quan-ly-user/confirm-delete-user/confirm-delete-user.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/quan-ly-user/insert-update-user/insert-update-user.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/quan-ly-user/insert-update-user/insert-update-user.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/quan-ly-user/insert-update-user/insert-update-user.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/quan-ly-user/insert-update-user/insert-update-user.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/quan-ly-user/user-mng.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/quan-ly-user/user-mng.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/quan-ly-user/user-mng.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/quan-ly-user/user-mng.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/features/quan-ly-user/user-mng.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/features/quan-ly-user/user-mng.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout/shortcut-modal/shortcut-modal.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout/shortcut-modal/shortcut-modal.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/navigation/nav/nav.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/navigation/nav/nav.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/app.config.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/app.config.local.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/app.config.prod.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/app.config.prod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1W0ncBCEex3QCEHk9GXyMI9SGx4" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../website" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+    <property name="ts.external.directory.path" value="G:\Angular\$HOME\.node_modules_global\mockup-angular-v2.0\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Angular\$HOME\.node_modules_global\mockup-angular-v2.0\src\app\core\register" />
+      <recent name="G:\Angular\$HOME\.node_modules_global\mockup-angular-v2.0\src\app\features\quan-ly-news" />
+      <recent name="G:\Angular\$HOME\.node_modules_global\mockup-angular-v2.0\src\app\features" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Angular\$HOME\.node_modules_global\mockup-angular-v2.0\src\app\core\issue-history" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="E2E Tests" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ee14f8c5-2a39-4788-85fb-a968a6a08d56" name="Default Changelist" comment="" />
+      <created>1578295456398</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578295456398</updated>
+      <workItem from="1578295458745" duration="6083000" />
+      <workItem from="1578302656721" duration="621000" />
+      <workItem from="1578303834192" duration="1008000" />
+      <workItem from="1578365672746" duration="1700000" />
+      <workItem from="1578368039689" duration="1633000" />
+      <workItem from="1578385321345" duration="4494000" />
+      <workItem from="1578467541943" duration="10729000" />
+      <workItem from="1578910363488" duration="2132000" />
+      <workItem from="1578928106848" duration="1038000" />
+      <workItem from="1578933486931" duration="885000" />
+      <workItem from="1579078305853" duration="4565000" />
+      <workItem from="1579141032500" duration="6835000" />
+      <workItem from="1579191329207" duration="4222000" />
+      <workItem from="1579196308671" duration="1248000" />
+      <workItem from="1579228228569" duration="8059000" />
+      <workItem from="1579241043766" duration="6675000" />
+      <workItem from="1579248497219" duration="3137000" />
+      <workItem from="1581382001894" duration="1401000" />
+      <workItem from="1581404467523" duration="5114000" />
+      <workItem from="1581412802296" duration="2547000" />
+      <workItem from="1581420713769" duration="346000" />
+      <workItem from="1581473210449" duration="12862000" />
+      <workItem from="1581490057070" duration="8990000" />
+      <workItem from="1581561187097" duration="4379000" />
+      <workItem from="1581575710664" duration="7780000" />
+      <workItem from="1581584179651" duration="2135000" />
+      <workItem from="1581671353172" duration="3978000" />
+      <workItem from="1581999185505" duration="7238000" />
+      <workItem from="1582014687421" duration="3427000" />
+      <workItem from="1582104321767" duration="2037000" />
+      <workItem from="1582180228749" duration="3954000" />
+      <workItem from="1582192206608" duration="2673000" />
+      <workItem from="1582251213626" duration="7930000" />
+      <workItem from="1582266118961" duration="5212000" />
+      <workItem from="1582271641706" duration="9659000" />
+      <workItem from="1582379334829" duration="1042000" />
+      <workItem from="1582526228651" duration="1743000" />
+      <workItem from="1582532558130" duration="807000" />
+      <workItem from="1582598151519" duration="13462000" />
+      <workItem from="1582699099390" duration="7385000" />
+      <workItem from="1582708379767" duration="464000" />
+      <workItem from="1582710912816" duration="98000" />
+      <workItem from="1582711242040" duration="1447000" />
+      <workItem from="1582770035149" duration="2992000" />
+      <workItem from="1582785691853" duration="12511000" />
+      <workItem from="1582856717860" duration="7131000" />
+      <workItem from="1583119761288" duration="664000" />
+      <workItem from="1583130337886" duration="9038000" />
+      <workItem from="1583205442033" duration="4889000" />
+      <workItem from="1583218349548" duration="8045000" />
+      <workItem from="1583300256094" duration="764000" />
+      <workItem from="1583305524909" duration="1859000" />
+      <workItem from="1583315547398" duration="4129000" />
+      <workItem from="1583374542691" duration="10374000" />
+      <workItem from="1583390189539" duration="5957000" />
+      <workItem from="1583464250563" duration="2921000" />
+      <workItem from="1583594083901" duration="6570000" />
+      <workItem from="1584328707903" duration="321000" />
+      <workItem from="1584439762941" duration="42000" />
+      <workItem from="1584440115588" duration="134000" />
+      <workItem from="1584440465406" duration="30000" />
+      <workItem from="1584440529236" duration="713000" />
+      <workItem from="1584506841071" duration="41000" />
+      <workItem from="1584514037684" duration="2479000" />
+      <workItem from="1584520718159" duration="2546000" />
+      <workItem from="1584587849832" duration="2357000" />
+      <workItem from="1585033396001" duration="135000" />
+      <workItem from="1585150887374" duration="2127000" />
+      <workItem from="1586426851224" duration="986000" />
+      <workItem from="1586501469703" duration="342000" />
+      <workItem from="1586848175481" duration="33000" />
+      <workItem from="1586849027366" duration="23000" />
+      <workItem from="1586850348387" duration="114000" />
+      <workItem from="1587025490732" duration="182000" />
+      <workItem from="1587026194136" duration="644000" />
+      <workItem from="1587105472983" duration="583000" />
+      <workItem from="1587113038411" duration="37000" />
+      <workItem from="1587116387152" duration="288000" />
+      <workItem from="1587119203534" duration="1040000" />
+      <workItem from="1587120405344" duration="649000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.ts" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
